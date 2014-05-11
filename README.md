@@ -1,3 +1,3 @@
-ILovePPP
+锘縄LovePPP
 ========
-饮水思源BBS PPP版客户端
+楗按鎬濇簮BBS PPP鐗堝鎴风
