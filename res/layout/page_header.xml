@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ic_1_navigation_back" />
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_marginLeft="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="主题模式"
+        android:textSize="20sp" 
+        android:layout_weight="1">
+    </TextView>
+
+    <TextView
+        android:id="@+id/collect"
+        android:layout_marginLeft="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="精华区"
+        android:textSize="20sp" 
+        android:layout_weight="1">
+    </TextView>
+
+    <!-- 
+    <TextView
+        android:id="@+id/upload"
+        android:layout_marginLeft="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="新上载区"
+        android:textSize="20sp" >
+    </TextView>
+     -->
+
+</LinearLayout>
