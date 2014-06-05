@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+        android:background="@color/black">
+
+        <include layout="@layout/head" >
+        </include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black" >
+
+        <include layout="@layout/image_text_activity_footer" >
+        </include>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/articlelist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/foot"
+        android:layout_below="@+id/head"
+        android:cacheColorHint="@color/black"
+        android:divider="@color/list_line"
+        android:dividerHeight="1dip" >
+    </ListView>
+
+    <com.annmars.iloveppp.ui.ExtendedViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/foot"
+        android:layout_below="@+id/head"
+        android:background="@color/black" />
+
+</RelativeLayout>

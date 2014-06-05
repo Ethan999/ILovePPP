@@ -1,27 +1,65 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
-    
-   <android.support.v4.view.ViewPager  
-        android:id="@+id/viewPager"  
-        android:layout_width="fill_parent"  
-        android:layout_height="wrap_content" /> 
-        
-    <RelativeLayout  
-        android:layout_width="fill_parent"  
-        android:layout_height="wrap_content" 
-        android:orientation="vertical" >  
-  
-        <LinearLayout  
-            android:id="@+id/viewGroup"  
-            android:layout_width="fill_parent"  
-            android:layout_height="wrap_content"  
-            android:layout_alignParentBottom="true" 
-            android:layout_marginBottom="30dp"  
-            android:gravity="center_horizontal"  
-            android:orientation="horizontal" >  
-        </LinearLayout>  
-    </RelativeLayout>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
-</FrameLayout>
+    
+    <com.annmars.iloveppp.ui.ExtendedViewPager 
+	    android:id="@+id/viewPager"
+	    android:background="@color/black"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/viewGroupUp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/empty" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/viewGroupDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save_to_my_collect" />
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete_from_my_collect" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

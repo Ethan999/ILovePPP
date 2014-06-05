@@ -10,8 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true" >
 
-         <include layout="@layout/page_header" />
-         
+        <include layout="@layout/ppp_browser_activity_page_header" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -20,14 +19,25 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true" >
 
-       <include layout="@layout/page_footer" />
+        <include layout="@layout/ppp_browser_activity_page_footer" />
     </RelativeLayout>
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
         android:layout_below="@id/header"
-        android:layout_above="@id/footer" />
+        android:fadeScrollbars="false"
+        android:scrollbarFadeDuration="0" 
+        android:scrollbars="vertical"/>
+    
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header" 
+        android:visibility="invisible"/>
 
 </RelativeLayout>
